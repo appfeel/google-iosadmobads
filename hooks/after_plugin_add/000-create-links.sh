@@ -4,19 +4,16 @@ echo "Creating necessary links for GoogleAdbom.framework SDK..."
 
 if [ ! -e plugins/com.ios.libgoogleadmobads/src/ios/GoogleMobileAds.framework/Headers ]
 then
-  echo "Headers link"
   ln -s -r plugins/com.ios.libgoogleadmobads/src/ios/GoogleMobileAds.framework/Versions/A/Headers/ plugins/com.ios.libgoogleadmobads/src/ios/GoogleMobileAds.framework/Headers
 fi
 
 if [ ! -e plugins/com.ios.libgoogleadmobads/src/ios/GoogleMobileAds.framework/GoogleMobileAds ]
 then
-  echo "GoogleMobileAds link"
   ln -s -r plugins/com.ios.libgoogleadmobads/src/ios/GoogleMobileAds.framework/Versions/A/GoogleMobileAds plugins/com.ios.libgoogleadmobads/src/ios/GoogleMobileAds.framework/GoogleMobileAds
 fi
 
 if [ ! -e plugins/com.ios.libgoogleadmobads/src/ios/GoogleMobileAds.framework/Versions/Current ]
 then
-  echo "Versions/Current link"
   ln -s -r plugins/com.ios.libgoogleadmobads/src/ios/GoogleMobileAds.framework/Versions/A/ plugins/com.ios.libgoogleadmobads/src/ios/GoogleMobileAds.framework/Versions/Current
 fi
 
