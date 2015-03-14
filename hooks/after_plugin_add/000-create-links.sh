@@ -1,15 +1,23 @@
 #!/usr/bin/env bash
 
-if [[ $CORDOVA_PLUGINS == *"com.ios.libgoogleadmobads"* ]]
+echo "Creating necessary links for GoogleAdbom.framework SDK..."
+
+if [ ! -f plugins/com.ios.libgoogleadmobads/src/ios/GoogleMobileAds.framework/Headers ]
 then
-  echo "Creating necessary links for GoogleAdbom.framework SDK..."
+  echo "Headers link"
   ln -s -r plugins/com.ios.libgoogleadmobads/src/ios/GoogleMobileAds.framework/Versions/A/Headers/ plugins/com.ios.libgoogleadmobads/src/ios/GoogleMobileAds.framework/Headers
-
-
-  ln -s -r plugins/com.ios.libgoogleadmobads/src/ios/GoogleMobileAds.framework/Versions/A/GoogleMobileAds plugins/com.ios.libgoogleadmobads/src/ios/GoogleMobileAds.framework/GoogleMobileAds
-
-
-  ln -s -r plugins/com.ios.libgoogleadmobads/src/ios/GoogleMobileAds.framework/Versions/A/ plugins/com.ios.libgoogleadmobads/src/ios/GoogleMobileAds.framework/Versions/Current
-  
-  echo "done!"
 fi
+
+if [ ! -f plugins/com.ios.libgoogleadmobads/src/ios/GoogleMobileAds.framework/GoogleMobileAds ]
+then
+  echo "GoogleMobileAds link"
+  ln -s -r plugins/com.ios.libgoogleadmobads/src/ios/GoogleMobileAds.framework/Versions/A/GoogleMobileAds plugins/com.ios.libgoogleadmobads/src/ios/GoogleMobileAds.framework/GoogleMobileAds
+fi
+
+if [ ! -f plugins/com.ios.libgoogleadmobads/src/ios/GoogleMobileAds.framework/Versions/Current ]
+then
+  echo "Versions/Current link"
+  ln -s -r plugins/com.ios.libgoogleadmobads/src/ios/GoogleMobileAds.framework/Versions/A/ plugins/com.ios.libgoogleadmobads/src/ios/GoogleMobileAds.framework/Versions/Current
+fi
+
+echo "done!"
