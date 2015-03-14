@@ -11,4 +11,5 @@ then
 
   ln -s -r plugins/com.ios.libgoogleadmobads/src/ios/GoogleMobileAds.framework/Versions/A/ plugins/com.ios.libgoogleadmobads/src/ios/GoogleMobileAds.framework/Versions/Current
   
+  echo "done!"
 fi
