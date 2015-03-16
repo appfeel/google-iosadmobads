@@ -4,7 +4,7 @@ Copyright (c) 2014 AppFeel. All rights reserved.
 Use of this source code is governed by a MIT license that can be
 found in the LICENSE file.
 -->
-<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0" version="1.1.0" id="com.ios.libgoogleadmobads">
+<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0" version="1.1.1" id="com.ios.libgoogleadmobads">
   <name>iOS Google AdMob Ads library</name>
   <description>iOS Google AdMob Ads library base dependency for other plugins</description>
   <author>AppFeel</author>
