@@ -18,8 +18,6 @@ found in the LICENSE file.
   </engines>
   
   <platform name="ios">
-    <!--hook type="after_plugin_add" src="hooks/after_plugin_add/000-create-links.sh" /-->
-    
     <!-- Google AdMob framework -->
     <framework src="src/ios/GoogleMobileAds.framework" custom="true" />
     
