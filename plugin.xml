@@ -18,6 +18,9 @@ found in the LICENSE file.
   </engines>
   
   <platform name="ios">
+    <!-- This hook has been deprecated (see http://stackoverflow.com/questions/28974791/plugman-framework-skips-mac-os-x-symbolic-links). Use this plugin directly with url:
+      <dependency id="com.ios.libgoogleadmobads" url="https://github.com/appfeel/google-iosadmobads"/>
+    -->
     <!--hook type="after_plugin_add" src="hooks/after_plugin_add/000-create-links.sh" /-->
     <!-- Google AdMob framework -->
     <framework src="src/ios/GoogleMobileAds.framework" custom="true" />
