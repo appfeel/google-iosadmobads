@@ -26,19 +26,5 @@ found in the LICENSE file.
     </config-file>
     <!-- Google AdMob framework -->
     <framework src="src/ios/GoogleMobileAds.framework" custom="true" />
-    
-    <!-- iOS development frameworks needed by Google AdMob framework -->
-    <framework src="AdSupport.framework" />
-    <framework src="AudioToolbox.framework" />
-    <framework src="AVFoundation.framework" />
-    <framework src="CoreFoundation.framework" />
-    <framework src="CoreMedia.framework" />
-    <framework src="CoreTelephony.framework" />
-    <framework src="MessageUI.framework" />
-    <framework src="QuartzCore.framework" />
-    <framework src="StoreKit.framework" />
-    <framework src="SystemConfiguration.framework" />
-    <framework src="EventKit.framework" />
-    <framework src="EventKitUI.framework" />
   </platform>
 </plugin>
